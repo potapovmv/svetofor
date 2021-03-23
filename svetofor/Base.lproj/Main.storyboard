@@ -15,27 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="31n-iF-zdW">
-                                <rect key="frame" x="147" y="97" width="120" height="400"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDL-Bo-MHs">
-                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFM-y5-bol">
-                                        <rect key="frame" x="0.0" y="140" width="120" height="120"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xB2-pb-Z6c">
-                                        <rect key="frame" x="0.0" y="280" width="120" height="120"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </view>
-                                </subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDL-Bo-MHs">
+                                <rect key="frame" x="147" y="97" width="120" height="120"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" secondItem="sDL-Bo-MHs" secondAttribute="height" multiplier="3.33333" id="7GP-CG-xrB"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" secondItem="sDL-Bo-MHs" secondAttribute="width" id="urM-hU-5SE"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="hlu-UY-43K"/>
+                                    <constraint firstAttribute="width" secondItem="sDL-Bo-MHs" secondAttribute="height" multiplier="1:1" id="r3f-SX-Y23"/>
                                 </constraints>
-                            </stackView>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIO-uG-CDE">
                                 <rect key="frame" x="112" y="726" width="190" height="60"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,20 +38,26 @@
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0WN-sQ-gq7"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFM-y5-bol">
+                                <rect key="frame" x="147" y="237" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xB2-pb-Z6c">
+                                <rect key="frame" x="147" y="377" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="31n-iF-zdW" firstAttribute="centerX" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="681-gw-DIu"/>
-                            <constraint firstItem="31n-iF-zdW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="7cc-9c-fGo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="sDL-Bo-MHs" secondAttribute="trailing" constant="147" id="31g-Kj-Njn"/>
                             <constraint firstItem="oIO-uG-CDE" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="I9x-ph-RYT"/>
+                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="N4z-Os-CBZ"/>
                             <constraint firstItem="oIO-uG-CDE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QmK-Xn-DEC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="oIO-uG-CDE" secondAttribute="trailing" constant="112" id="aZb-To-MSu"/>
-                            <constraint firstItem="31n-iF-zdW" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="bbi-fj-rfi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oIO-uG-CDE" secondAttribute="bottom" constant="76" id="cBr-Kv-XKb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="31n-iF-zdW" secondAttribute="trailing" constant="147" id="iEM-zD-vLk"/>
-                            <constraint firstItem="oIO-uG-CDE" firstAttribute="top" relation="lessThanOrEqual" secondItem="31n-iF-zdW" secondAttribute="bottom" constant="229" id="kXj-j6-3F7"/>
-                            <constraint firstItem="31n-iF-zdW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="mVv-Zs-LCH"/>
-                            <constraint firstAttribute="bottom" secondItem="31n-iF-zdW" secondAttribute="bottom" constant="399" id="qDM-wQ-bX3"/>
+                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="centerX" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u5P-5h-tJM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
