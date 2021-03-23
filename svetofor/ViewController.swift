@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var redSignalView: UIView!
     override func viewWillLayoutSubviews() {
         redSignalView.layer.cornerRadius = 60
-        yellowSignalView.layer.cornerRadius = 60
         greenSignalView.layer.cornerRadius = 60
+        yellowSignalView.layer.cornerRadius = 60
        
     }
     override func viewDidLoad() {
