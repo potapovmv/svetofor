@@ -18,12 +18,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sDL-Bo-MHs">
                                 <rect key="frame" x="147" y="97" width="120" height="120"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="Ebf-mV-pZf"/>
-                                    <constraint firstAttribute="width" constant="120" id="cDO-AY-LiM"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="hlu-UY-43K"/>
-                                    <constraint firstAttribute="width" secondItem="sDL-Bo-MHs" secondAttribute="height" multiplier="1:1" id="r3f-SX-Y23"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIO-uG-CDE">
                                 <rect key="frame" x="112" y="726" width="190" height="60"/>
@@ -43,37 +37,30 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFM-y5-bol">
                                 <rect key="frame" x="147" y="237" width="120" height="120"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="2ud-Xl-FmX"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="YI8-a4-8vD"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xB2-pb-Z6c">
                                 <rect key="frame" x="147" y="377" width="120" height="120"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="6Ws-kK-DnL"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="120" id="zx2-W1-Lcs"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gFM-y5-bol" firstAttribute="top" secondItem="sDL-Bo-MHs" secondAttribute="bottom" constant="20" id="0uQ-Et-cLi"/>
-                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="8EN-eZ-rX2"/>
-                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="leading" secondItem="xB2-pb-Z6c" secondAttribute="leading" id="A5n-RX-ucA"/>
-                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eqd-el-juc"/>
+                            <constraint firstItem="xB2-pb-Z6c" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="2eS-8l-ipb"/>
+                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="height" secondItem="gFM-y5-bol" secondAttribute="height" id="5RH-el-Afi"/>
+                            <constraint firstItem="gFM-y5-bol" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9zc-zB-OkN"/>
+                            <constraint firstItem="gFM-y5-bol" firstAttribute="top" secondItem="sDL-Bo-MHs" secondAttribute="bottom" constant="20" id="CVj-l8-p4j"/>
                             <constraint firstItem="oIO-uG-CDE" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="121" id="I9x-ph-RYT"/>
-                            <constraint firstItem="xB2-pb-Z6c" firstAttribute="top" secondItem="gFM-y5-bol" secondAttribute="bottom" constant="20" id="N3r-PU-87a"/>
-                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="leading" secondItem="gFM-y5-bol" secondAttribute="leading" id="PXZ-8Z-HLK"/>
+                            <constraint firstItem="gFM-y5-bol" firstAttribute="height" secondItem="xB2-pb-Z6c" secondAttribute="height" id="IZS-Cx-Xnb"/>
                             <constraint firstItem="oIO-uG-CDE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QmK-Xn-DEC"/>
+                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="TdS-0Z-eZx"/>
+                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="width" secondItem="gFM-y5-bol" secondAttribute="width" id="UIj-3a-zPp"/>
+                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="147" id="UjM-Y7-WTM"/>
+                            <constraint firstItem="xB2-pb-Z6c" firstAttribute="top" secondItem="gFM-y5-bol" secondAttribute="bottom" constant="20" id="VOt-Wu-gKf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="oIO-uG-CDE" secondAttribute="trailing" constant="112" id="aZb-To-MSu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oIO-uG-CDE" secondAttribute="bottom" constant="76" id="cBr-Kv-XKb"/>
-                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="ff3-4M-rwM"/>
-                            <constraint firstItem="xB2-pb-Z6c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="377" id="i1A-UD-m9X"/>
-                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="trailing" secondItem="gFM-y5-bol" secondAttribute="trailing" id="tx1-oX-d7U"/>
-                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="trailing" secondItem="xB2-pb-Z6c" secondAttribute="trailing" id="zFs-CS-Hpr"/>
-                            <constraint firstAttribute="bottom" secondItem="xB2-pb-Z6c" secondAttribute="bottom" constant="399" id="zlu-K1-qaG"/>
+                            <constraint firstItem="sDL-Bo-MHs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fAi-Zy-9q0"/>
+                            <constraint firstItem="gFM-y5-bol" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="237" id="wU2-d6-kVV"/>
+                            <constraint firstItem="gFM-y5-bol" firstAttribute="width" secondItem="xB2-pb-Z6c" secondAttribute="width" id="xMp-QD-prk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
